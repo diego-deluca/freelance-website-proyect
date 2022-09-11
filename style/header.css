@@ -111,8 +111,8 @@
 
 @media only screen and (max-width: 530px) {
   .checkBtn {
-    display: flex;
     flex: 0.5;
+    display: flex;
   }
   .menu {
     width: 100%;
@@ -121,7 +121,6 @@
     z-index: 5;
     display: flex;
     justify-content: flex-start;
-
     flex-direction: column;
     align-items: flex-start;
     position: absolute;

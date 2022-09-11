@@ -1,18 +1,18 @@
-.logo-bot,
+.nav-footer {
+  display: flex;
+  align-items: center;
+}
 .logo-bot a {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: auto;
   height: 80px;
 }
 .footer-logo {
   max-width: 200px;
   transition: scale ease 0.25s;
-  margin-left: 30px;
-  scale: 60%;
+  margin-left: 10px;
+  scale: 90%;
 }
 
 .footer-logo:hover {
-  scale: 70%;
+  scale: 95%;
 }
