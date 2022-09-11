@@ -1,0 +1,15 @@
+{
+  "manifest_version": "3",
+  "version": "1.0",
+  "name": "El Placer Es Mio",
+  "icons": [
+    {
+      "src": "Logo/icon1.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
