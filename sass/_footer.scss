@@ -1,0 +1,103 @@
+$toolShadow: 0 0 8px rgba(0, 0, 0, 0.5);
+$iconShadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+$gray96: #969696;
+@use "mixinflex";
+/* ----------------------    FOOTER NAV SETTINGS   ----------------------*/
+.nav-footer {
+  @include mixinflex.flex-create(row);
+  width: 100%;
+  .logo-bot {
+    display: flex;
+
+    a {
+      display: flex;
+      height: 80px;
+    }
+  }
+}
+
+/* ----------------------     LOGO (LEFT SIDE) ----------------------*/
+.footer-logo {
+  max-width: auto;
+  transition: scale ease 0.25s;
+  margin-left: 10px;
+  scale: 90%;
+  &:hover {
+    scale: 95%;
+  }
+}
+/* ----------------------     ICONS (RIGHT SIDE) ----------------------*/
+
+/* ----------------------     TOOLTIP  ----------------------*/
+.tooltip {
+  opacity: 0;
+  font-size: 20px;
+  position: absolute;
+  top: -30px;
+  background-color: $gray96;
+  box-shadow: $toolShadow;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 3px 5px;
+  color: #fff;
+  pointer-events: none;
+  transition: ease-in-out 0.3s;
+  /* ----------------------     BOX SHAPE  ----------------------*/
+  &::after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: $gray96;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+/* ----------------------    ICONS  ----------------------*/
+.container-icons {
+  @include mixinflex.flex-create(row);
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+
+  padding-right: 18px;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .bx {
+    font-size: 28px;
+    background-color: $gray96;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: $iconShadow;
+    cursor: pointer;
+  }
+  .icon {
+    display: flex;
+    padding: 0 5px;
+    @include mixinflex.flex-create(column);
+    &:hover {
+      .tooltip {
+        opacity: 1;
+        top: -50px;
+      }
+      a {
+        color: #ffc8c8;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-footer {
+    justify-content: center;
+    .footer-logo {
+      display: none;
+    }
+    .container-icons {
+      justify-content: center;
+    }
+  }
+}

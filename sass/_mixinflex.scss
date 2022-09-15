@@ -1,0 +1,14 @@
+@mixin flex-create($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin hamb-menu {
+  transition: ease-in 0.25s;
+  user-select: none;
+  &:hover {
+    color: #d75f37;
+  }
+}

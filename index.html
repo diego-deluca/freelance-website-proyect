@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El Placer Es Mío</title>
-    <link rel="stylesheet" href="style/general.css" />
-    <link rel="stylesheet" href="style/header.css" />
-    <link rel="stylesheet" href="style/footer.css" />
+
+    <!--Sass-->
+    <link rel="stylesheet" href="sass/style.css" />
+
     <!-- Swiper CSS-->
     <link rel="stylesheet" href="style/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style/slider.css" />
+
     <!-- Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
@@ -37,7 +38,7 @@
       </div>
       <li class="container menu">
         <ul>
-          <a href="#index">Inicio</a>
+          <a href="#">Inicio</a>
         </ul>
         <ul>
           <a href="#">Productos</a>
@@ -66,7 +67,7 @@
       <section class="container-slider mySwiper">
         <div class="slides swiper-wrapper">
           <div class="slide swiper-slide">
-            <img src="images/1.webp" alt="" />
+            <img src="images/1.jpg" alt="" />
           </div>
           <div class="slide swiper-slide">
             <img src="images/2.jpg" alt="" />
@@ -78,7 +79,7 @@
             <img src="images/4.jpg" alt="" />
           </div>
           <div class="slide swiper-slide">
-            <img src="images/5.webp" alt="" />
+            <img src="images/5.jpg" alt="" />
           </div>
         </div>
         <i class="bx bx-right-arrow"></i>
@@ -90,7 +91,7 @@
   <footer>
     <nav class="nav-footer">
       <div class="container logo-bot">
-        <a href="index.html">
+        <a href="#">
           <img
             class="footer-logo"
             src="logo/posible1wht.png"
@@ -98,8 +99,40 @@
           />
         </a>
       </div>
+      <div class="container-icons">
+        <div class="insta icon">
+          <div class="tooltip">Instagram</div>
+          <a href="https://www.instagram.com/elplacer_esmio/" target="_blank">
+            <span><i class="bx bxl-instagram"></i></span>
+          </a>
+        </div>
+        <div class="youtube icon">
+          <div class="tooltip">YouTube</div>
+
+          <span>
+            <a
+              href="https://www.youtube.com/watch?v=1eNSWZ4x2ZU&ab_channel=Don%27sTunes"
+              target="_blank"
+            >
+              <i class="bx bxl-youtube"></i>
+            </a>
+          </span>
+        </div>
+        <div class="git icon">
+          <div class="tooltip">Git Hub</div>
+          <a
+            href="https://github.com/diego-deluca/freelance-website-proyect"
+            target="_blank"
+          >
+            <span><i class="bx bxl-github"></i></span>
+          </a>
+        </div>
+      </div>
     </nav>
   </footer>
+
+  <!--Swiper-->
   <script src="js/swiper-bundle.min.js"></script>
+  <!--Default-->
   <script src="js/index.js"></script>
 </html>

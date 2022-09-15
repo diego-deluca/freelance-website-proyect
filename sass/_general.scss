@@ -1,0 +1,37 @@
+$headerShadow: 0px 5px 8px #0000004d;
+$footerShadow: 0px -5px 10px #0000004d;
+$navColor: #323232;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  user-select: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+  height: 300vh;
+  background: #282828;
+}
+
+header {
+  background-color: $navColor;
+  min-width: auto;
+  height: 110px;
+  box-shadow: $headerShadow;
+}
+
+footer {
+  font-family: "Grand Hotel", cursive;
+  margin-top: auto;
+  min-width: auto;
+  display: flex;
+  height: 80px;
+  background: $navColor;
+  box-shadow: $footerShadow;
+}

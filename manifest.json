@@ -4,7 +4,7 @@
   "name": "El Placer Es Mio",
   "icons": [
     {
-      "src": "Logo/icon1.png",
+      "src": "logo/icon1.png",
       "type": "image/png",
       "sizes": "128x128"
     }
