@@ -10,11 +10,15 @@ $arrowShadow: 0 8px 10px #00000080;
   margin-top: 50px;
   position: relative;
   border-radius: 50px;
-  width: 1080px;
-  height: 60vh;
+  width: 80%;
+  height: 45%;
   border: none;
   box-shadow: $sliderShadow;
   overflow: hidden;
+  @media only screen and (max-width: 960px) {
+    height: 90%;
+  }
+
   .slides {
     display: flex;
     .slide {

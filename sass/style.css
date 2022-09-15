@@ -296,11 +296,16 @@ footer {
   margin-top: 50px;
   position: relative;
   border-radius: 50px;
-  width: 1080px;
-  height: 60vh;
+  width: 80%;
+  height: 45%;
   border: none;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5019607843);
   overflow: hidden;
+}
+@media only screen and (max-width: 960px) {
+  .container-slider {
+    height: 90%;
+  }
 }
 .container-slider .slides {
   display: flex;
