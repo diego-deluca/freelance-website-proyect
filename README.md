@@ -1,7 +1,7 @@
 # Freelance-web-proyect1
-Responsive HTML, CSS &amp; JS Freelance Website Proyect
+Responsive HTML, CSS &amp;, Sass & JS Freelance Website Proyect.
 
-Sex Shop Website design in process. 
+Use of complements as Swiper, Cubic icons & FontAwesome
 
-Dark mode & sound implemented
+
 
