@@ -1,0 +1,27 @@
+@use "mixinflex";
+.about-us {
+  position: relative;
+  .logo-float {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin-left: 30px;
+    margin-right: 15px;
+  }
+  .text-container {
+    margin-right: 30px;
+    .bxs-quote-alt-right {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(50%);
+      font-size: 100px;
+    }
+    p {
+      z-index: 5;
+    }
+  }
+}
