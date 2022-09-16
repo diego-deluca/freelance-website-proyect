@@ -290,7 +290,12 @@ footer {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  height: 25%;
+  height: 20%;
+}
+@media only screen and (max-width: 650px) {
+  .slider-wrapper-section {
+    height: 15%;
+  }
 }
 .slider-wrapper-section .container-slider {
   margin-top: 50px;
@@ -368,28 +373,72 @@ footer {
   }
 }
 .about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-us .wrapper-mid {
+  font-size: 1.3em;
+  font-family: "Indie Flower", cursive;
+  margin-top: 100px;
+  text-align: center;
+  width: 70%;
   position: relative;
+  background-color: antiquewhite;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3), inset 0 0 30px rgba(0, 0, 0, 0.5);
+  border-radius: 2em;
 }
-.about-us .logo-float {
-  height: 150px;
+.about-us .wrapper-mid .logo-float {
+  height: 120px;
   width: 150px;
-  background-color: red;
-  border-radius: 50%;
   float: left;
-  shape-outside: margin-box;
-  margin-left: 30px;
-  margin-right: 15px;
+  margin: 80px 20px;
+  shape-outside: border-box;
+  border-radius: 50%;
 }
-.about-us .text-container {
-  margin-right: 30px;
+.about-us .wrapper-mid .logo-float img {
+  height: 150px;
+  width: auto;
 }
-.about-us .text-container .bxs-quote-alt-right {
+.about-us .wrapper-mid .text-container {
+  color: rgb(29, 29, 29);
+  width: auto;
+  margin: 0 30px 20px 20px;
+}
+.about-us .wrapper-mid .text-container .bxs-quote-alt-right {
+  color: crimson;
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(50%);
+  top: -60px;
+  left: 15%;
   font-size: 100px;
+  text-shadow: 0 10px 5px rgb(0, 0, 0);
 }
-.about-us .text-container p {
+.about-us .wrapper-mid .text-container h1 {
+  padding: 30px 0 20px;
+  text-decoration: underline;
+}
+.about-us .wrapper-mid .text-container p {
+  text-align: justify;
   z-index: 5;
+}
+
+@media only screen and (max-width: 780px) {
+  .about-us .wrapper-mid {
+    width: 90%;
+  }
+  .about-us .wrapper-mid .logo-float {
+    height: 60px;
+    width: 75px;
+  }
+  .about-us .wrapper-mid .logo-float img {
+    height: 80px;
+    width: auto;
+  }
+  .about-us .wrapper-mid h1 {
+    font-size: 25px;
+  }
+  .about-us .wrapper-mid p {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

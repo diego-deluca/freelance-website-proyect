@@ -5,7 +5,10 @@ $arrowShadow: 0 8px 10px #00000080;
 
 .slider-wrapper-section {
   @include mixinflex.flex-create(column);
-  height: 25%;
+  height: 20%;
+  @media only screen and (max-width: 650px) {
+    height: 15%;
+  }
   .container-slider {
     margin-top: 50px;
     position: relative;
