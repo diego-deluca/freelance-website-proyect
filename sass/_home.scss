@@ -1,16 +1,38 @@
 @use "mixinflex";
+$complexShadow: 0 10px 10px rgba(0, 0, 0, 0.3),
+  inset 0 0 30px rgba(0, 0, 0, 0.5);
+hr {
+  align-self: center;
+  margin-top: 15vh;
+  width: 95%;
+  background: rgb(255, 44, 114);
+
+  height: 5px;
+  border: none;
+  border-radius: 10px;
+}
+.division {
+  text-decoration: underline;
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  color: crimson;
+  text-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Grand Hotel", cursive;
+}
+
 .about-us {
   @include mixinflex.flex-create(column);
   .wrapper-mid {
     font-size: 1.3em;
     font-family: "Indie Flower", cursive;
-    margin-top: 100px;
+    margin: 100px 0 100px;
     text-align: center;
     width: 70%;
     position: relative;
     background-color: antiquewhite;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3),
-      inset 0 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: $complexShadow;
     border-radius: 2em;
     .logo-float {
       height: 120px;
@@ -37,7 +59,7 @@
         top: -60px;
         left: 15%;
         font-size: 100px;
-        text-shadow: 0 10px 5px rgba(0, 0, 0, 1);
+        text-shadow: 0 10px 5px #000000;
       }
       h1 {
         padding: 30px 0 20px;
@@ -51,6 +73,9 @@
   }
 }
 @media only screen and (max-width: 780px) {
+  .division {
+    font-size: 40px;
+  }
   .about-us {
     .wrapper-mid {
       width: 90%;
@@ -62,11 +87,14 @@
           width: auto;
         }
       }
-      h1 {
-        font-size: 25px;
-      }
-      p {
-        font-size: 20px;
+      .text-container {
+        h1 {
+          font-size: 20px;
+          padding: 30px 0 5px;
+        }
+        p {
+          font-size: 20px;
+        }
       }
     }
   }

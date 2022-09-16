@@ -122,7 +122,7 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 260px;
-  height: 300vh;
+  height: auto;
   background: #282828;
 }
 
@@ -290,15 +290,15 @@ footer {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  height: 20%;
+  height: 75vh;
 }
 @media only screen and (max-width: 650px) {
   .slider-wrapper-section {
-    height: 15%;
+    height: 20%;
   }
 }
 .slider-wrapper-section .container-slider {
-  margin-top: 50px;
+  margin-top: 10vh;
   position: relative;
   border-radius: 50px;
   width: 80%;
@@ -310,7 +310,6 @@ footer {
   display: flex;
 }
 .slider-wrapper-section .container-slider .slides .slide {
-  min-width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -372,6 +371,27 @@ footer {
     scale: 50%;
   }
 }
+hr {
+  align-self: center;
+  margin-top: 15vh;
+  width: 95%;
+  background: rgb(255, 44, 114);
+  height: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+.division {
+  text-decoration: underline;
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  color: crimson;
+  text-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Grand Hotel", cursive;
+}
+
 .about-us {
   display: flex;
   flex-direction: column;
@@ -381,7 +401,7 @@ footer {
 .about-us .wrapper-mid {
   font-size: 1.3em;
   font-family: "Indie Flower", cursive;
-  margin-top: 100px;
+  margin: 100px 0 100px;
   text-align: center;
   width: 70%;
   position: relative;
@@ -412,7 +432,7 @@ footer {
   top: -60px;
   left: 15%;
   font-size: 100px;
-  text-shadow: 0 10px 5px rgb(0, 0, 0);
+  text-shadow: 0 10px 5px #000000;
 }
 .about-us .wrapper-mid .text-container h1 {
   padding: 30px 0 20px;
@@ -424,6 +444,9 @@ footer {
 }
 
 @media only screen and (max-width: 780px) {
+  .division {
+    font-size: 40px;
+  }
   .about-us .wrapper-mid {
     width: 90%;
   }
@@ -435,10 +458,11 @@ footer {
     height: 80px;
     width: auto;
   }
-  .about-us .wrapper-mid h1 {
-    font-size: 25px;
+  .about-us .wrapper-mid .text-container h1 {
+    font-size: 20px;
+    padding: 30px 0 5px;
   }
-  .about-us .wrapper-mid p {
+  .about-us .wrapper-mid .text-container p {
     font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
