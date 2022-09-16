@@ -27,7 +27,7 @@ hr {
   .wrapper-mid {
     font-size: 1.3em;
     font-family: "Indie Flower", cursive;
-    margin: 100px 0 100px;
+    margin: 100px 0 0px;
     text-align: center;
     width: 70%;
     position: relative;
@@ -72,6 +72,28 @@ hr {
     }
   }
 }
+.info-section {
+  @include mixinflex.flex-create(column);
+}
+.wrapper-bot {
+  font-size: 1.2em;
+  font-family: "ABeeZee", sans-serif;
+  text-align: center;
+  width: 60%;
+  line-height: 20px;
+  h2 {
+    color: rgb(163, 96, 96);
+    margin: 20px;
+    text-decoration: underline;
+  }
+  p {
+    color: rgb(209, 209, 209);
+  }
+  .last {
+    margin-bottom: 50px;
+  }
+}
+
 @media only screen and (max-width: 780px) {
   .division {
     font-size: 40px;

@@ -401,7 +401,7 @@ hr {
 .about-us .wrapper-mid {
   font-size: 1.3em;
   font-family: "Indie Flower", cursive;
-  margin: 100px 0 100px;
+  margin: 100px 0 0px;
   text-align: center;
   width: 70%;
   position: relative;
@@ -441,6 +441,32 @@ hr {
 .about-us .wrapper-mid .text-container p {
   text-align: justify;
   z-index: 5;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrapper-bot {
+  font-size: 1.2em;
+  font-family: "ABeeZee", sans-serif;
+  text-align: center;
+  width: 60%;
+  line-height: 20px;
+}
+.wrapper-bot h2 {
+  color: rgb(163, 96, 96);
+  margin: 20px;
+  text-decoration: underline;
+}
+.wrapper-bot p {
+  color: rgb(209, 209, 209);
+}
+.wrapper-bot .last {
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 780px) {
