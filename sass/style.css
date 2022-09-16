@@ -285,7 +285,7 @@ footer {
   }
 }
 /* ----------------------- SLIDES -------------------------*/
-.slider {
+.slider-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,7 +304,7 @@ footer {
 }
 @media only screen and (max-width: 960px) {
   .container-slider {
-    height: 90%;
+    height: 80%;
   }
 }
 .container-slider .slides {
