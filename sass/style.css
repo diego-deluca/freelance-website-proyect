@@ -372,4 +372,30 @@ footer {
 .bx-left-arrow {
     scale: 50%;
   }
+}
+.about-us {
+  position: relative;
+}
+.about-us .logo-float {
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  border-radius: 50%;
+  float: left;
+  shape-outside: margin-box;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+.about-us .text-container {
+  margin-right: 30px;
+}
+.about-us .text-container .bxs-quote-alt-right {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(50%);
+  font-size: 100px;
+}
+.about-us .text-container p {
+  z-index: 5;
 }/*# sourceMappingURL=style.css.map */
