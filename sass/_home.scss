@@ -69,6 +69,9 @@ hr {
         text-align: justify;
         z-index: 5;
       }
+      a {
+        color: #fd8888cc;
+      }
     }
   }
 }
@@ -79,8 +82,8 @@ hr {
   font-size: 1.2em;
   font-family: "ABeeZee", sans-serif;
   text-align: center;
-  width: 60%;
-  line-height: 20px;
+  width: 70%;
+
   h2 {
     color: rgb(163, 96, 96);
     margin: 20px;
@@ -92,9 +95,15 @@ hr {
   .last {
     margin-bottom: 50px;
   }
+  a {
+    color: #fdbfbfcc;
+  }
 }
 
 @media only screen and (max-width: 780px) {
+  .wrapper-bot {
+    width: 90%;
+  }
   .division {
     font-size: 40px;
   }

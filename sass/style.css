@@ -442,6 +442,9 @@ hr {
   text-align: justify;
   z-index: 5;
 }
+.about-us .wrapper-mid .text-container a {
+  color: rgba(253, 136, 136, 0.8);
+}
 
 .info-section {
   display: flex;
@@ -454,8 +457,7 @@ hr {
   font-size: 1.2em;
   font-family: "ABeeZee", sans-serif;
   text-align: center;
-  width: 60%;
-  line-height: 20px;
+  width: 70%;
 }
 .wrapper-bot h2 {
   color: rgb(163, 96, 96);
@@ -468,8 +470,14 @@ hr {
 .wrapper-bot .last {
   margin-bottom: 50px;
 }
+.wrapper-bot a {
+  color: rgba(253, 191, 191, 0.8);
+}
 
 @media only screen and (max-width: 780px) {
+  .wrapper-bot {
+    width: 90%;
+  }
   .division {
     font-size: 40px;
   }
