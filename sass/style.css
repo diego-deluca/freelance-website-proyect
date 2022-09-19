@@ -387,7 +387,7 @@ hr {
   margin-top: 50px;
   display: block;
   text-align: center;
-  font-size: 50px;
+  font-size: 2.8rem;
   color: crimson;
   text-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
   font-family: "Grand Hotel", cursive;
@@ -620,6 +620,9 @@ html {
   }
 }
 @media (max-width: 527px) {
+  .division {
+    font-size: 2.5rem;
+  }
   html {
     font-size: 70%;
   }
