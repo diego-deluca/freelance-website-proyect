@@ -1,113 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El Placer Es Mío</title>
 
-    <!--Sass-->
-    <link rel="stylesheet" href="sass/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Placer Es Mío</title>
+  <!--ANIMATES CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
-    <!-- Swiper CSS-->
-    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+  <!--GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
-    <!-- Boxicons CSS -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- FontAwesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="icon" href="logo/icon1.png" />
-  </head>
-  <header>
-    <nav class="nav-top-menu">
-      <div class="container logo-top">
-        <a href="#index">
-          <img
-            class="header-logo"
-            src="logo/posible1wht.png"
-            alt="logotipo el placer es mio"
-          />
+  <!--CSS ENLACE-->
+  <link rel="stylesheet" href="./style/contacto.css">
+
+  <!--Sass-->
+  <link rel="stylesheet" href="sass/style.css" />
+
+  <!-- Swiper CSS-->
+  <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <!-- FontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="logo/icon1.png" />
+</head>
+<header>
+  <nav class="nav-top-menu">
+    <div class="container logo-top">
+      <a href="#index">
+        <img class="header-logo" src="logo/posible1wht.png" alt="logotipo el placer es mio" />
+      </a>
+    </div>
+    <li class="container menu">
+      <ul>
+        <a href="#">Inicio</a>
+      </ul>
+      <ul>
+        <a href="#">Productos</a>
+      </ul>
+      <ul>
+        <a href="#">Consejos</a>
+      </ul>
+      <ul>
+        <a href="#">Inspiración</a>
+      </ul>
+      <ul>
+        <a href="#">Tabú</a>
+      </ul>
+      <ul>
+        <a href="#">Contacto</a>
+      </ul>
+    </li>
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkBtn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </nav>
+</header>
+
+<body>
+
+  <div class="contenido">
+    <h1 class="logo">Dudas? <span>Contactanos!</span></h1>
+
+    <div class="contact">
+      <div class="contact-form">
+        <form action="">
+          <p>
+            <label>Nombre</label>
+            <input type="text" name="" id="">
+          </p>
+          <p>
+            <label>Apellido</label>
+            <input type="text" name="" id="">
+          </p>
+          <p>
+            <label>Email</label>
+            <input type="text" name="" id="">
+          </p>
+          <p>
+            <label>Telefono</label>
+            <input type="tel" name="" id="">
+          </p>
+          <p class="block">
+            <label>Mensaje</label>
+            <textarea placeholder="" rows="3"></textarea>
+          </p>
+          <p class="block">
+            <button type="submit">Enviar</button>
+          </p>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <ul>
+          <li><i class="fa-solid fa-phone"><a href="#"> 11 5828-6890</a></i></li>
+          <li><i class="fa-solid fa-envelope"><a href="#"> ElPlacerEsMio@gmail.com</a></i></li>
+          <li><i class="fa-solid fa-location-dot"><a href="#"> Buenos aires</a></i></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, veritatis.</p>
+
+        <p>Seguinos en nuestras redes.</p>
+
+        <div class="social">
+          <ul>
+            <li><a class="fa-2x fa-brands fa-facebook" href="#"></a></li>
+            <li><a class="fa-2x fa-brands fa-instagram" href="#"></a></li>
+            <li><a class="fa-2x fa-brands fa-youtube" href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+<footer>
+  <nav class="nav-footer">
+    <div class="container logo-bot">
+      <a href="#">
+        <img class="footer-logo" src="logo/posible1wht.png" alt="logotipo el placer es mio" />
+      </a>
+    </div>
+    <div class="container-icons">
+      <div class="insta icon">
+        <div class="tooltip">Instagram</div>
+        <a href="https://www.instagram.com/elplacer_esmio/" target="_blank">
+          <span><i class="bx bxl-instagram"></i></span>
         </a>
       </div>
-      <li class="container menu">
-        <ul>
-          <a href="#">Inicio</a>
-        </ul>
-        <ul>
-          <a href="#">Productos</a>
-        </ul>
-        <ul>
-          <a href="#">Consejos</a>
-        </ul>
-        <ul>
-          <a href="#">Inspiración</a>
-        </ul>
-        <ul>
-          <a href="#">Tabú</a>
-        </ul>
-        <ul>
-          <a href="#">Contacto</a>
-        </ul>
-      </li>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkBtn">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-    </nav>
-  </header>
-  <body></body>
-  <footer>
-    <nav class="nav-footer">
-      <div class="container logo-bot">
-        <a href="#">
-          <img
-            class="footer-logo"
-            src="logo/posible1wht.png"
-            alt="logotipo el placer es mio"
-          />
+      <div class="youtube icon">
+        <div class="tooltip">YouTube</div>
+
+        <span>
+          <a href="https://www.youtube.com/watch?v=1eNSWZ4x2ZU&ab_channel=Don%27sTunes" target="_blank">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </span>
+      </div>
+      <div class="git icon">
+        <div class="tooltip">Git Hub</div>
+        <a href="https://github.com/diego-deluca/freelance-website-proyect" target="_blank">
+          <span><i class="bx bxl-github"></i></span>
         </a>
       </div>
-      <div class="container-icons">
-        <div class="insta icon">
-          <div class="tooltip">Instagram</div>
-          <a href="https://www.instagram.com/elplacer_esmio/" target="_blank">
-            <span><i class="bx bxl-instagram"></i></span>
-          </a>
-        </div>
-        <div class="youtube icon">
-          <div class="tooltip">YouTube</div>
+    </div>
+  </nav>
+</footer>
 
-          <span>
-            <a
-              href="https://www.youtube.com/watch?v=1eNSWZ4x2ZU&ab_channel=Don%27sTunes"
-              target="_blank"
-            >
-              <i class="bx bxl-youtube"></i>
-            </a>
-          </span>
-        </div>
-        <div class="git icon">
-          <div class="tooltip">Git Hub</div>
-          <a
-            href="https://github.com/diego-deluca/freelance-website-proyect"
-            target="_blank"
-          >
-            <span><i class="bx bxl-github"></i></span>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </footer>
+<!--Swiper-->
+<script src="js/swiper-bundle.min.js"></script>
+<!--Default-->
+<script src="js/index.js"></script>
 
-  <!--Swiper-->
-  <script src="js/swiper-bundle.min.js"></script>
-  <!--Default-->
-  <script src="js/index.js"></script>
 </html>
